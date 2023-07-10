@@ -34,6 +34,7 @@ const config = {
     locales: ['en'],
   },
 
+  
   presets: [
     [
       'classic',
@@ -61,22 +62,29 @@ const config = {
   ],
 
   themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+  /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      colorMode:{
+        defaultMode: 'dark',
+        disableSwitch: true,
+        respectPrefersColorScheme: true
+      },
+      
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
         title: 'My Site',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          src: 'https://w7.pngwing.com/pngs/148/1010/png-transparent-spiderman-logo-mask-comics-and-fantasy-spiderman-thumbnail.png',
+          // src: 'img/logo.svg',
         },
         items: [
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Productividad',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
@@ -135,6 +143,7 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
+      
     }),
 };
 

@@ -6,6 +6,7 @@ import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 
 import styles from './index.module.css';
+import Motion from '../components/motion/motion'
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -33,6 +34,7 @@ export default function Home() {
     <>
     <p>hola</p>
     <a href='/docs/intro'>docs</a>
+    <Motion></Motion>
     </>
     // <Layout
     //   title={`Hello from ${siteConfig.title}`}

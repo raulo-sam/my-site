@@ -67,6 +67,7 @@
   --ifm-color-emphasis-300: var(--secondary-10)!important;
   --ifm-color-emphasis-700: var(--secondary-30) !important;
   --ifm-global-radius: 0%;
+    
   /* --prism-background-color: var(--secondary-30) !important; */
   /* --prism-background-color: white !important; */
   /* --ifm-menu-link-sublist-icon: var(--secondary-10)!important; */
@@ -92,6 +93,11 @@
   border-radius: 0;
 }
 
+.theme-code-block-highlighted-line { 
+  background-color: var(--secondary-25) !important;
+  border: solid 1px var(--secondary-25);
+}
+
 .theme-code-block > pre, code > span, code {
   background-color: var(--secondary-20)!important;
 }
@@ -100,6 +106,18 @@
 }
 .breadcrumbs__link, .menu__link--active {
   border-bottom: solid 1px;
+}
+
+.alert a {
+  text-decoration: none;
+  color: var(--ifm-color-primary);
+}
+.alert a:hover {
+  text-decoration: underline;
+}
+
+.alert code {
+  background-color: var(--secondary-25) !important;
 }
   /* #__docusaurus {
   background-color: var(--body);

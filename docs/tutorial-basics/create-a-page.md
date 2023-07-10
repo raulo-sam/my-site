@@ -17,8 +17,9 @@ Create a file at `src/pages/my-react-page.js`:
 ```jsx title="src/pages/my-react-page.js"
 import React from 'react';
 import Layout from '@theme/Layout';
-
+// highlight-start
 export default function MyReactPage() {
+  // highlight-end
   return (
     <Layout>
       <h1>My React page</h1>

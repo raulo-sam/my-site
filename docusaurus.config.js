@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Raul Diaz site',
+  title: 'Raul Diaz site hola test',
   tagline: 'Raul Diaz Site hola test',
   favicon: 'img/favicon.ico',
 

@@ -33,7 +33,7 @@ export default function Home() {
 
     <>
     <p>hola</p>
-    <a href='/docs/intro'>docs</a>
+    <a href='/docs/productividad/intro'>docs</a>
     <Motion></Motion>
     </>
     // <Layout

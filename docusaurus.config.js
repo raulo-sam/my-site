@@ -43,14 +43,25 @@ const config = {
     [
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
+      (
+        {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
+          path: './docs',
+          sidebarCollapsible: true,
+          sidebarCollapsed: true,
+          // routeBasePath: 'docs/productividad/',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          // lastVersion: 'current',
+          // onlyIncludeVersions: ['current'],
         },
+
+
+
+        
         // blog: {
         //   showReadingTime: true,
         //   // Please change this to your repo.
@@ -61,10 +72,24 @@ const config = {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
+
+
       }),
     ],
   ],
 
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'community',
+        path: './docs',
+        routeBasePath: 'community',
+        sidebarPath: require.resolve('./sidebars.js'),
+        // ... other options
+      },
+    ],
+  ],
   themeConfig:
   /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -73,10 +98,17 @@ const config = {
         disableSwitch: true,
         respectPrefersColorScheme: true
       },
+      docs: {
+        sidebar: {
+          hideable: true,
+          autoCollapseCategories: true,
+        }
+      },
       
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
+        hideOnScroll: false,
         title: 'My Site',
         logo: {
           alt: 'My Site Logo',
@@ -85,6 +117,13 @@ const config = {
         },
         items: [
           {
+            type: 'docSidebar',
+            sidebarId: 'community',
+            position: 'left',
+            label: 'community',
+          },
+          {
+
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',

@@ -1,3 +1,6 @@
+Este curso y apunter viene del curso de Docker Fernando Herrrera en [Udemy](https://www.udemy.com/course/docker-guia-practica/) o en [DevTalles](https://cursos.devtalles.com/collections)
+
+
 ### Descarga imagen
 `` docker pull hello-world
 ### Ejecutar la imagen

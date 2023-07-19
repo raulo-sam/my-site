@@ -1,6 +1,6 @@
-```javascript title="keybindings.json"
-// Coloque sus atajos de teclado en este archivo para sobreescribir los valores predeterminadosauto[]
+```js title="keybindings.json"
  [ 
+     // Coloque sus atajos de teclado en este archivo para sobreescribir los valores predeterminadosauto[]
     // emmet
     {
         "key": "alt+e",

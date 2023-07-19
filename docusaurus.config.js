@@ -4,6 +4,42 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
+const navbarItems = [
+  {
+    type: 'docSidebar',
+    sidebarId: 'cursos',
+    position: 'left',
+    label: 'Cursos',
+  },
+  {
+
+    type: 'docSidebar',
+    sidebarId: 'guitarra',
+    position: 'left',
+    label: 'Guitarra',
+  },
+  {
+
+    type: 'docSidebar',
+    sidebarId: 'techNotes',
+    position: 'left',
+    label: 'Tech-Notes',
+  },
+  {
+
+    type: 'docSidebar',
+    sidebarId: 'personalNotes',
+    position: 'left',
+    label: 'Personal-Notes',
+  },
+  // {to: '/blog', label: 'Blog', position: 'left'},
+  {
+    href: 'https://github.com/facebook/docusaurus',
+    label: 'GitHub',
+    position: 'right',
+  },
+]
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Raul Diaz site hola test',
@@ -47,14 +83,13 @@ const config = {
         {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          path: './docs',
           sidebarCollapsible: true,
           sidebarCollapsed: true,
           // routeBasePath: 'docs/productividad/',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          // editUrl:
+          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
           // lastVersion: 'current',
           // onlyIncludeVersions: ['current'],
         },
@@ -62,13 +97,13 @@ const config = {
 
 
         
-        // blog: {
-        //   showReadingTime: true,
-        //   // Please change this to your repo.
-        //   // Remove this to remove the "edit this page" links.
-        //   editUrl:
-        //     'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        // },
+        blog: {
+          showReadingTime: true,
+          // Please change this to your repo.
+          // Remove this to remove the "edit this page" links.
+          editUrl:
+            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+        },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -78,18 +113,6 @@ const config = {
     ],
   ],
 
-  plugins: [
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'community',
-        path: './docs',
-        routeBasePath: 'community',
-        sidebarPath: require.resolve('./sidebars.js'),
-        // ... other options
-      },
-    ],
-  ],
   themeConfig:
   /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -110,32 +133,12 @@ const config = {
       navbar: {
         hideOnScroll: false,
         title: 'My Site',
-        logo: {
-          alt: 'My Site Logo',
-          src: 'https://w7.pngwing.com/pngs/148/1010/png-transparent-spiderman-logo-mask-comics-and-fantasy-spiderman-thumbnail.png',
-          // src: 'img/logo.svg',
-        },
-        items: [
-          {
-            type: 'docSidebar',
-            sidebarId: 'community',
-            position: 'left',
-            label: 'community',
-          },
-          {
-
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Productividad',
-          },
-          {to: '/blog', label: 'Blog', position: 'left'},
-          {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
-            position: 'right',
-          },
-        ],
+        // logo: {
+        //   alt: 'My Site Logo',
+        //   src: 'https://w7.pngwing.com/pngs/148/1010/png-transparent-spiderman-logo-mask-comics-and-fantasy-spiderman-thumbnail.png',
+        //   // src: 'img/logo.svg',
+        // },
+        items: navbarItems ,
       },
       footer: {
         style: 'dark',

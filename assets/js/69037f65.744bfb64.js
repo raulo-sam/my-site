@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[4117],{96:e=>{e.exports=JSON.parse('{"title":"Angular Notes","description":"Algunos apuntes sobre Angular","slug":"/category/angular-notes","permalink":"/docs/category/angular-notes","navigation":{"next":{"title":"Custom decorators","permalink":"/docs/tech-notes/Angular/Custom decorators"}}}')}}]);

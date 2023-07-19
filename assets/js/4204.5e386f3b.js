@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[4204],{4204:(e,t,n)=>{n.r(t),n.d(t,{default:()=>r});var u=n(7294);function r(e){return(0,u.useEffect)((()=>{window.location.href="/"}),[]),u.createElement(u.Fragment,null)}}}]);
